@@ -22,7 +22,7 @@ EC2 INSTANCE:
 ==================================================================
 
 RESULT:
-  - Host webserver1 IP browser or curl
+  - Host webserver1 IP in browser or curl
   IP: 54.210.97.214
   
 ubuntu@webserver1:~$ curl http://localhost
@@ -63,6 +63,7 @@ ubuntu@HAProxysever:~$ curl http://localhost | grep Hello
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100    16  100    16    0     0   1600      0 --:--:-- --:--:-- --:--:--  1600
+
 "Hello World 2"
 
 
