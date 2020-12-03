@@ -5,6 +5,7 @@ OBJECTIVE:
     Removal of either one of your web servers should automatically fail over to the other server.
 
 ========================================================================================================================================================================
+
 RESOURCES USED:
   - AWS EC2 INSTANCE (2 Web Servers, 1 HAProxy Server)
 
