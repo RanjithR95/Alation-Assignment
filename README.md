@@ -21,57 +21,57 @@ EC2 INSTANCE:
   
 ==================================================================
 
-RESULT:
-  - Host webserver1 IP in browser or curl
-  IP: 54.210.97.214
+### RESULT:
+    - Host webserver1 IP in browser or curl
+    IP: 54.210.97.214
   
-ubuntu@webserver1:~$ curl http://localhost
-"Hello World 1"
+    ubuntu@webserver1:~$ curl http://localhost
+    "Hello World 1"
 
-ubuntu@webserver1:~$ curl http://localhost
-"Hello World 1"
+    ubuntu@webserver1:~$ curl http://localhost
+    "Hello World 1"
 
-ubuntu@webserver1:~$ curl http://localhost
-"Hello World 1"
+    ubuntu@webserver1:~$ curl http://localhost
+    "Hello World 1"
 
-  - Host webserver1 IP in browser or curl
-  IP: 3.88.110.110
+    - Host webserver1 IP in browser or curl
+    IP: 3.88.110.110
   
-ubuntu@webserver2:~$ curl http://localhost
-"Hello World 2"
+    ubuntu@webserver2:~$ curl http://localhost
+    "Hello World 2"
 
-ubuntu@webserver2:~$ curl http://localhost
-"Hello World 2"
+    ubuntu@webserver2:~$ curl http://localhost
+    "Hello World 2"
 
-ubuntu@webserver2:~$ curl http://localhost
-"Hello World 2"
+    ubuntu@webserver2:~$ curl http://localhost
+    "Hello World 2"
 
-   - Host Load Balance IP in browser or curl
-   IP: 54.163.53.130
+    - Host Load Balance IP in browser or curl
+    IP: 54.163.53.130
    
-ubuntu@HAProxysever:~$ curl http://localhost
-"Hello World 2"
+    ubuntu@HAProxysever:~$ curl http://localhost
+    "Hello World 2"
 
-ubuntu@HAProxysever:~$ curl http://localhost
-"Hello World 1"
+    ubuntu@HAProxysever:~$ curl http://localhost
+    "Hello World 1"
 
-ubuntu@HAProxysever:~$ curl http://localhost
-"Hello World 2"
+    ubuntu@HAProxysever:~$ curl http://localhost
+    "Hello World 2"
 
-ubuntu@HAProxysever:~$ curl http://localhost | grep Hello
+    ubuntu@HAProxysever:~$ curl http://localhost | grep Hello
   
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100    16  100    16    0     0   1600      0 --:--:-- --:--:-- --:--:--  1600
+    100    16  100    16    0     0   1600      0 --:--:-- --:--:-- --:--:--  1600
 
-"Hello World 2"
+    "Hello World 2"
 
 
-- HAProxy Server: http://54.163.53.130:8181/
+    - HAProxy Server: http://54.163.53.130:8181/
 
-ID: HAPAdmin
+    ID: HAPAdmin
 
-PASS: AdminPass
+    PASS: AdminPass
 
 ====================================================================
 
