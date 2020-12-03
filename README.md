@@ -4,22 +4,22 @@ OBJECTIVE:
   - Curl of your Load Balancer should return a “Hello World” that is being served by one of your web servers.
     Removal of either one of your web servers should automatically fail over to the other server.
 
-========================================================================================================================================================================
+============================================================================================================
 
 RESOURCES USED:
   - AWS EC2 INSTANCE (2 Web Servers, 1 HAProxy Server)
 
-=========================================================================================================================================================================
+============================================================================================================
 
 HAPROXY:  
   - HAProxy is a Open source, It is very fast and reliable solution offering high availability, load balancing, and proxying for TCP and HTTP-based applications.
   
-=========================================================================================================================================================================  
+============================================================================================================
 
 EC2 INSTANCE:
   - An EC2 Instance is a virtual server is Amazon's elastic compute cloud (EC2) to run the application on the Amazon web services (AWS) infrastructure.
   
-==========================================================================================================================================================================
+=============================================================================================================
 
 RESULT:
   - Host webserver1 IP browser or curl
@@ -59,6 +59,7 @@ ubuntu@HAProxysever:~$ curl http://localhost
 "Hello World 2"
 
 ubuntu@HAProxysever:~$ curl http://localhost | grep Hello
+  
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100    16  100    16    0     0   1600      0 --:--:-- --:--:-- --:--:--  1600
@@ -69,7 +70,7 @@ ubuntu@HAProxysever:~$ curl http://localhost | grep Hello
 ID: HAPAdmin
 PASS: AdminPass
 
-===========================================================================================================================================================================
+==============================================================================================================
 
 CONFIGURATION:
   - Webserver1 has hosted with below configuration using AWS EC2 instance
