@@ -5,18 +5,22 @@ OBJECTIVE:
     Removal of either one of your web servers should automatically fail over to the other server.
 
 ==================================================================
+
 RESOURCES USED:
   - AWS EC2 INSTANCE (2 Web Servers, 1 HAProxy Server)
 
 ==================================================================
+
 HAPROXY:  
   - HAProxy is a Open source, It is very fast and reliable solution offering high availability, load balancing, and proxying for TCP and HTTP-based applications.
   
 ==================================================================
+
 EC2 INSTANCE:
   - An EC2 Instance is a virtual server is Amazon's elastic compute cloud (EC2) to run the application on the Amazon web services (AWS) infrastructure.
   
 ==================================================================
+
 RESULT:
   - Host webserver1 IP browser or curl
   IP: 54.210.97.214
@@ -69,6 +73,9 @@ ID: HAPAdmin
 PASS: AdminPass
 
 ====================================================================
+
+CONFIGURATION:
+
   - Webserver1 has hosted with below configuration using AWS EC2 instance
       - OS: Ubuntu
       - Webserver: Apache2 
