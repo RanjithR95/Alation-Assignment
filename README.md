@@ -27,8 +27,10 @@ RESULT:
   
 ubuntu@webserver1:~$ curl http://localhost
 "Hello World 1"
+
 ubuntu@webserver1:~$ curl http://localhost
 "Hello World 1"
+
 ubuntu@webserver1:~$ curl http://localhost
 "Hello World 1"
 
@@ -37,8 +39,10 @@ ubuntu@webserver1:~$ curl http://localhost
   
 ubuntu@webserver2:~$ curl http://localhost
 "Hello World 2"
+
 ubuntu@webserver2:~$ curl http://localhost
 "Hello World 2"
+
 ubuntu@webserver2:~$ curl http://localhost
 "Hello World 2"
 
@@ -47,8 +51,10 @@ ubuntu@webserver2:~$ curl http://localhost
    
 ubuntu@HAProxysever:~$ curl http://localhost
 "Hello World 2"
+
 ubuntu@HAProxysever:~$ curl http://localhost
 "Hello World 1"
+
 ubuntu@HAProxysever:~$ curl http://localhost
 "Hello World 2"
 
